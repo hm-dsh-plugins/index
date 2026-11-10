@@ -1,7 +1,6 @@
-# Each plugin is its own repository and lives in a subdirectory; this
-# repository carries only the shared index and the publishing notes.
-dsh-file-editor/
-dsh-sidebar-notes/
+# Every plugin is its own repository in a dsh-* subdirectory; this repository
+# carries only the shared index and the publishing notes.
+dsh-*/
 
 # Notes the plugin writes into whatever workspace a session lives in.
 .dsh-notes/
