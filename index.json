@@ -1,12 +1,12 @@
 {
   "format": 1,
   "title": {
-    "en": "dsh-sidebar-notes (self-hosted)",
-    "zh": "dsh-sidebar-notes（自建源）"
+    "en": "hm-dsh-plugins (self-hosted)",
+    "zh": "hm-dsh-plugins（自建源）"
   },
   "description": {
-    "en": "A one-entry index for dsh-sidebar-notes, so the plugin market's discover page can render and install it. The install-verified and risk labels the public DSH.SO index carries are audit results, not self-declared, so this index claims none of them.",
-    "zh": "只收录 dsh-sidebar-notes 的索引源，用于在插件市场「发现」页渲染并安装它。DSH.SO 官方索引里的「安装已验证」「低风险」是平台审计结论，不能自封，所以这里不声明这些标签。"
+    "en": "Self-hosted index of the plugins maintained under hm-dsh-plugins. The install-verified and risk labels the public DSH.SO index carries are platform audit results, not self-declared, so this index claims none of them.",
+    "zh": "hm-dsh-plugins 名下插件自建的索引源。DSH.SO 官方索引里的「安装已验证」「低风险」是平台审计结论，不能自封，所以这里不声明这些标签。"
   },
   "metadata": {
     "categories": {
@@ -69,6 +69,44 @@
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-notes",
             "commit": "65ac63c875666bd7fdb9b5a635097881b38ba601"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-file-editor",
+      "description": {
+        "en": "Editable CodeMirror renderer for the Sidebar's document preview: open a text file and edit it like a notepad, with an LF/CRLF control.",
+        "zh": "在侧边栏的文档预览里用 CodeMirror 直接编辑文本文件，并提供一个 LF/CRLF 行尾切换。"
+      },
+      "author": "hm-dsh-plugins",
+      "repository": {
+        "url": "https://github.com/hm-dsh-plugins/dsh-file-editor"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "codemirror",
+          "editor",
+          "sidebar"
+        ],
+        "labels": [
+          "stars-0"
+        ],
+        "sortKeys": {
+          "stars": 0
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794328919,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/hm-dsh-plugins/dsh-file-editor",
+            "commit": "d9a3b1ea44f62a4e3e1f4142247c0b3f950eee82"
           }
         }
       ]
