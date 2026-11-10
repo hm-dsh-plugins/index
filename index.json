@@ -74,14 +74,14 @@
       ]
     },
     {
-      "name": "dsh-file-editor",
+      "name": "dsh-sidebar-editor",
       "description": {
         "en": "Editable CodeMirror renderer for the Sidebar's document preview: open a text file and edit it like a notepad, with an LF/CRLF control.",
         "zh": "在侧边栏的文档预览里用 CodeMirror 直接编辑文本文件，并提供一个 LF/CRLF 行尾切换。"
       },
       "author": "hm-dsh-plugins",
       "repository": {
-        "url": "https://github.com/hm-dsh-plugins/dsh-file-editor"
+        "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-editor"
       },
       "metadata": {
         "category": "ui",
@@ -102,11 +102,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1794328919,
+          "publishTimestamp": 1794329436,
           "source": {
             "type": "git",
-            "url": "https://github.com/hm-dsh-plugins/dsh-file-editor",
-            "commit": "d9a3b1ea44f62a4e3e1f4142247c0b3f950eee82"
+            "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-editor",
+            "commit": "8975768d7497eee2cdda137a42b881611eac1d82"
           }
         }
       ]
