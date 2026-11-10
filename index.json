@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-sidebar-notes (self-hosted)",
+    "zh": "dsh-sidebar-notes（自建源）"
+  },
+  "description": {
+    "en": "A one-entry index for dsh-sidebar-notes, so the plugin market's discover page can render and install it. The install-verified and risk labels the public DSH.SO index carries are audit results, not self-declared, so this index claims none of them.",
+    "zh": "只收录 dsh-sidebar-notes 的索引源，用于在插件市场「发现」页渲染并安装它。DSH.SO 官方索引里的「安装已验证」「低风险」是平台审计结论，不能自封，所以这里不声明这些标签。"
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": {
+          "en": "UI enhancements",
+          "zh": "UI 增强"
+        }
+      }
+    },
+    "labels": {
+      "stars-0": {
+        "title": {
+          "en": "★ 0",
+          "zh": "★ 0"
+        }
+      }
+    },
+    "sortKeys": {
+      "stars": {
+        "title": {
+          "en": "GitHub stars",
+          "zh": "GitHub 星标"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-sidebar-notes",
+      "description": {
+        "en": "Plain-text sticky notes in the DeepSeek Harness right Sidebar: one file per note in the session workspace, saved as you type, copyable in one click.",
+        "zh": "在 DeepSeek Harness 右侧边栏记纯文本便签：一条一个文件，落在当前会话工作区里，边写边存，可一键复制。"
+      },
+      "author": "hm-dsh-plugins",
+      "repository": {
+        "url": "https://github.com/hm-dsh-plugins/dsh-notes"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "notes",
+          "sidebar"
+        ],
+        "labels": [
+          "stars-0"
+        ],
+        "sortKeys": {
+          "stars": 0
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794326943,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/hm-dsh-plugins/dsh-notes",
+            "commit": "ee3fc5b10df14678aa33ec4963d4d6f96adb2c60"
+          }
+        }
+      ]
+    }
+  ]
+}
