@@ -37,6 +37,43 @@
   },
   "plugins": [
     {
+      "name": "dsh-context-reminder",
+      "description": {
+        "en": "Reminds you to compact the conversation when context usage reaches 30%, then again at every further 10%: the dialog offers compaction or 'not now', and declining only silences the level it showed.",
+        "zh": "上下文占用到 30% 时提醒压缩，之后每多 10 个百分点再提醒一次；可以当场压缩，也可以暂不，暂不只会压住它显示的那一档。"
+      },
+      "author": "hm-dsh-plugins",
+      "repository": {
+        "url": "https://github.com/hm-dsh-plugins/dsh-context-reminder"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "context",
+          "compaction"
+        ],
+        "labels": [
+          "stars-0"
+        ],
+        "sortKeys": {
+          "stars": 0
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794434553,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/hm-dsh-plugins/dsh-context-reminder",
+            "commit": "7fc0ce91813211fbbb986aa0b9eab8eb05a1d6ff"
+          }
+        }
+      ]
+    },
+    {
       "name": "dsh-sidebar-notes",
       "description": {
         "en": "Plain-text sticky notes in the DeepSeek Harness right Sidebar: one set per conversation, saved as you type, copyable in one click, opened from the Session header, with a dot on every conversation that still holds notes and the count in that row's hover card.",
