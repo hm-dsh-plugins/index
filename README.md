@@ -9,6 +9,7 @@
 - 插件目录名与包名一致（`dsh-sidebar-notes/` ↔ `dsh-sidebar-notes`）。
 - 每个仓库带 `.gitattributes`（`* text=auto eol=lf`）、`.gitignore`（`node_modules/`、`.dsh-notes/`）、`LICENSE`。
 - `lib/` 提交进仓库：profile 用 `link:` 或 `github:` 安装时直接加载它，安装过程不构建。
+- 索引只有一份，就是本仓库根的 [`index.json`](index.json)；插件仓库里不放索引文件。
 
 ### 文件布局
 
@@ -20,7 +21,6 @@ dsh-sidebar-notes/
 ├─ README.md
 ├─ .gitattributes
 ├─ .gitignore
-├─ market/index.json     # 可选：自建索引源
 ├─ src/index.js          # Host 入口：注册路由
 ├─ src/host/             # 路由、协议、存储（唯一信任边界）
 ├─ src/client/           # 页面、状态、样式、文案
@@ -78,7 +78,7 @@ git push local
 3. `git add -A`（确认 `lib/` 在本次改动里）并提交；
 4. `git push && git push local`；
 5. 发 npm（可选）：`npm publish`；
-6. 更新 `market/index.json` 的 `versions`。
+6. 在本索引仓库改 `index.json`：该版本的 `source` 用 `{ "type": "git", "url": …, "commit": "<40 位 sha>" }` 指向刚推送的提交，提交后 `git push && git push local`。
 
 打包内容核对：
 
