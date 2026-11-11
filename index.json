@@ -63,12 +63,12 @@
       },
       "versions": [
         {
-          "version": "0.2.1",
-          "publishTimestamp": 1794386272,
+          "version": "0.2.2",
+          "publishTimestamp": 1794386532,
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-notes",
-            "commit": "b85b8e8965ba5f303688ab6ec61e3404a8e9def0"
+            "commit": "be59e701be7be59b5e5d3661a0e3b1bb27e8545b"
           }
         }
       ]
