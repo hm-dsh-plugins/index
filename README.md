@@ -137,7 +137,13 @@ npm publish
 
 `labels` 里的 `install-verified`、`risk-low` 来自平台沙盒安装与安全审计，`stars-*`、`npm-*` 由平台扫描，自建源保持为空。
 
-参考实现：[index.json](index.json)（本仓库根目录）。
+参考实现：[index.json](index.json)（本仓库根目录），地址
+
+```
+https://raw.githubusercontent.com/hm-dsh-plugins/index/main/index.json
+```
+
+索引里的 `source.commit` 钉在插件的具体提交上，安装时按 `git+<url>#<commit>` 取包。
 
 **4. 进官方目录**
 
