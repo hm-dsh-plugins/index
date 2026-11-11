@@ -106,7 +106,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-editor",
-            "commit": "8975768d7497eee2cdda137a42b881611eac1d82"
+            "commit": "d992d6664a7accc316204b9826f6fc99c55c487a"
           }
         }
       ]
