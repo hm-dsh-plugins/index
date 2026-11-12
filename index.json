@@ -138,12 +138,12 @@
       },
       "versions": [
         {
-          "version": "0.1.0",
-          "publishTimestamp": 1794329436,
+          "version": "0.2.0",
+          "publishTimestamp": 1794489338,
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-editor",
-            "commit": "d56f68df910e3888c0b7667130828cd6f1475a17"
+            "commit": "71f186af4938e0688cb0dfb818f4cf14e1a80d17"
           }
         }
       ]
