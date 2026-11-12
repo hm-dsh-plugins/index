@@ -68,7 +68,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-context-reminder",
-            "commit": "bec9d872569141f30ec93e16bf48a3c65f858313"
+            "commit": "b242fa1d8e6f7a4937099317012512f86274611a"
           }
         }
       ]
@@ -105,7 +105,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-notes",
-            "commit": "ed1e5a0402a54e872a8b8d865c553032b9a62464"
+            "commit": "4826155381ec3fcecaca45998747cc0c9f02ee50"
           }
         }
       ]
@@ -143,7 +143,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-editor",
-            "commit": "d7e3ddd70d930b7e7a1d3ad00dcbfa3c9984f075"
+            "commit": "d56f68df910e3888c0b7667130828cd6f1475a17"
           }
         }
       ]
