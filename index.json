@@ -76,8 +76,8 @@
     {
       "name": "dsh-sidebar-notes",
       "description": {
-        "en": "Plain-text sticky notes in the DeepSeek Harness right Sidebar: one set per conversation, saved as you type, copyable in one click, opened from the Session header, with a dot on every conversation that still holds notes and the count in that row's hover card.",
-        "zh": "在 DeepSeek Harness 右侧边栏记纯文本便签：每个对话一组，落在会话工作区里，边写边存，可一键复制；会话页头有入口直接打开，有便签的对话在行首点一个圆点，悬停卡片里写明条数。"
+        "en": "Plain-text sticky notes in the DeepSeek Harness right Sidebar: one set per conversation, typed into a composer and saved as you edit, copyable in one click, opened from the Session header, with a dot on every conversation that still holds notes and the count in that row's hover card.",
+        "zh": "在 DeepSeek Harness 右侧边栏记纯文本便签：每个对话一组，落在会话工作区里，顶上一个输入框加「添加」，边写边存，可一键复制；会话页头有入口直接打开，有便签的对话在行首点一个圆点，悬停卡片里写明条数。"
       },
       "author": "hm-dsh-plugins",
       "repository": {
@@ -100,12 +100,12 @@
       },
       "versions": [
         {
-          "version": "0.2.2",
-          "publishTimestamp": 1794386532,
+          "version": "0.3.0",
+          "publishTimestamp": 1794644041,
           "source": {
             "type": "git",
             "url": "https://github.com/hm-dsh-plugins/dsh-sidebar-notes",
-            "commit": "4826155381ec3fcecaca45998747cc0c9f02ee50"
+            "commit": "5962b007d670cef4210d1f58491efe649d1e64a6"
           }
         }
       ]
