@@ -115,7 +115,16 @@ package.json               2.3kB
 3. `git add -A`（确认 `lib/` 在本次改动里）并提交；
 4. `git push && git push local`；
 5. 发 npm（可选）：`npm publish`；
-6. 在本索引仓库改 `index.json`：该版本的 `source` 用 `{ "type": "git", "url": …, "commit": "<40 位 sha>" }` 指向刚推送的提交，提交后 `git push && git push local`。
+6. 在本索引仓库跑一次发布脚本，再提交推送：
+
+```powershell
+node scripts/publish.mjs dsh-sidebar-notes          # 从插件仓库读版本与 HEAD，写进 index.json
+node scripts/publish.mjs dsh-sidebar-notes --dry    # 只打印要改的字段
+node scripts/publish.mjs dsh-sidebar-notes --zh "新描述" --en "new text"
+git add index.json; git commit -m "chore(index): dsh-sidebar-notes <version>"; git push && git push local
+```
+
+脚本只动该条目的 `version` / `publishTimestamp` / `source.commit`（可选描述），不会提交，也不会在版本没变时白改一次时间戳；如果那个提交还没推到任何远端分支，它会直接拒绝——索引是别的机器去拉的，推不上去的提交装了也是空的。
 
 打包内容核对：
 
@@ -180,7 +189,7 @@ npm publish
 https://raw.githubusercontent.com/hm-dsh-plugins/index/main/index.json
 ```
 
-索引里的 `source.commit` 钉在插件的具体提交上，安装时按 `git+<url>#<commit>` 取包，不随分支浮动。每次发版只做一件事：把索引里这条的 `version`、`publishTimestamp`、`commit` 换成新提交，推 `index` 仓库。
+索引里的 `source.commit` 钉在插件的具体提交上，安装时按 `git+<url>#<commit>` 取包，不随分支浮动。每次发版只做一件事：把索引里这条的 `version`、`publishTimestamp`、`commit` 换成新提交，推 `index` 仓库——[`scripts/publish.mjs`](scripts/publish.mjs) 就干这一件事，用法见上面的「发一个版本」。
 
 ### 官方目录（dsh-market 里能被搜到）
 
