@@ -240,6 +240,6 @@ dsh-market 里的插件列表不是它自己维护的，而是每次打开时实
 |---|---|---|---|---|---|
 | `dsh-sidebar-notes` | 0.2.2 | 未发布 | 未提交 | 已收录 | GitHub + Forgejo |
 | `dsh-sidebar-editor` | 0.1.0 | 未发布 | 未提交 | 已收录 | GitHub + Forgejo |
-| `dsh-context-reminder` | 0.1.0 | 未发布 | 未提交 | 已收录 | GitHub + Forgejo |
+| `dsh-context-reminder` | 0.1.1 | 未发布 | 未提交 | 已收录 | GitHub + Forgejo |
 
 三个插件统一使用 GPLv3（`GPL-3.0-or-later`），`lib/` 随仓库提交，`github:` 与 `link:` 两种安装方式都可用。
