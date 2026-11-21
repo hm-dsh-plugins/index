@@ -110,11 +110,11 @@ package.json               2.3kB
 
 ### 发一个版本
 
-1. 改 `package.json` 的 `version`；
+1. `npm run bump` 递增版本（`yyyy.MM.dd-x`，当天第几次发布，见插件 README 的「版本号」）；
 2. `npm run build`；
 3. `git add -A`（确认 `lib/` 在本次改动里）并提交；
 4. `git push && git push local`；
-5. 发 npm（可选）：`npm publish`；
+5. 发 npm（可选）：`npm publish --tag latest`（日期版本是 semver 预发布版，不带 `--tag` 会被拒绝）；
 6. 在本索引仓库跑一次发布脚本，再提交推送：
 
 ```powershell
@@ -140,14 +140,14 @@ tar -tzf (Get-ChildItem "$env:TEMP\*.tgz" | Select-Object -First 1).FullName
 ```powershell
 npm run verify
 npm pack --dry-run
-npm publish
+npm publish --tag latest
 ```
 
 包名不带 scope 就是包名本身；如果改用 scope（`@你/<name>`），首次发布要加 `--access public`。
 
 > 发出去就收不回来了：`npm unpublish` 有 72 小时窗口，而且**版本号不重用**，撤回也占着那个号。所以先在 `npm pack --dry-run` 上确认清楚。
 
-安装方：`dsh plugin --profile web add <name>`，可锁版本 `<name>@0.2.0`。
+安装方：`dsh plugin --profile web add <name>`，可锁版本 `<name>@2026.11.21-1`。
 
 ## 索引源
 
