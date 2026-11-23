@@ -5,5 +5,8 @@ dsh-*/
 # Notes the plugin writes into whatever workspace a session lives in.
 .dsh-notes/
 
+# Local npm cache used when the default cache directory is not writable.
+.npm-cache/
+
 # Local ACL repair artefacts, never part of the index.
 .dsh-acl-recovery/
